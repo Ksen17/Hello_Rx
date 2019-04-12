@@ -34,6 +34,10 @@ class ViewController: UIViewController {
             }
         }.disposed(by: disposeBag)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        textInput.becomeFirstResponder()
+    }
 
 
 }
